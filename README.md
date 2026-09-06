@@ -64,5 +64,12 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Aboutmovie is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://equityzen.com/company/aboutmovie
+AboutMovie (ticker ABMO on the EquityZen secondary marketplace) is described by that listing as an
+interactive platform providing comprehensive information, reviews, and recommendations for movies and
+TV shows. A full contract-discovery pass on 2026-09-06 found no first-party host for the brand: the
+EquityZen listing names no company website, no GitHub organization exists under the name, and every
+same-name domain probed belongs to an unrelated party (aboutmovie.com is an Afternic for-sale parking
+lander, aboutmovie.org an untitled Hostinger Horizons SPA, aboutmovie.net a Cloudflare-challenged host).
+No developer program, API documentation, SDK, or machine-readable contract could be found.
+
+- Harvest source (secondary-market venue listing, not a company site): https://equityzen.com/company/aboutmovie

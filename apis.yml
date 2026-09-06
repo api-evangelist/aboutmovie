@@ -1,23 +1,76 @@
 aid: aboutmovie
 name: Aboutmovie
-description: 'Aboutmovie is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  AboutMovie (listed as ticker ABMO on the EquityZen secondary marketplace) is described by that
+  listing as an interactive platform providing comprehensive information, reviews, and
+  recommendations for movies and TV shows, classified there under Software, Artificial
+  Intelligence, and Data and Analytics. That listing is the only public record of the company
+  this profile could locate; it names no company website, and a full contract-discovery pass
+  found no first-party host for the brand. All three same-name domains probed belong to
+  unrelated parties: aboutmovie.com is an Afternic for-sale parking lander that answers HTTP 200
+  with the same stub on every path, aboutmovie.net is behind a Cloudflare challenge, and
+  aboutmovie.org is an untitled Hostinger Horizons single-page site carrying no AboutMovie
+  branding. No developer program, API documentation, SDK, GitHub organization, or
+  machine-readable contract could be found.
 url: https://raw.githubusercontent.com/api-evangelist/aboutmovie/refs/heads/main/apis.yml
+x-harvest-source-url: https://equityzen.com/company/aboutmovie
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: 'enrichment pass 2026-09-06: full contract discovery run, no first-party host or API surface found'
+x-domain-status: unattributed
+x-domain-note: >-
+  No domain could be attributed to this company. aboutmovie.com (created 2024-07-23, GoDaddy,
+  Domains By Proxy, NS1/NS2.AFTERNIC.COM) is a for-sale parking lander returning an identical
+  114-byte HTTP 200 stub on every path — those 200s are not documents. aboutmovie.org (created
+  2023-11-29, NameCheap, Withheld for Privacy, dns-parking.com nameservers) is an untitled
+  Hostinger Horizons SPA that also soft-200s every path and carries no AboutMovie branding.
+  aboutmovie.net answers 403 with a Cloudflare interstitial. None is wired as a Website pointer.
 specificationVersion: '0.20'
 created: '2026-09-06'
 modified: '2026-09-06'
 tags:
 - Company
+- Media
+- Entertainment
+- Movies
+- Television
+- Recommendations
+- Consumer
+- Artificial Intelligence
+- Data and Analytics
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-common:
-- type: Website
-  url: https://equityzen.com/company/aboutmovie
+common: []
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    The EquityZen listing (the only public record of AboutMovie found) names no company website,
+    no GitHub organization exists under the name, and every same-name domain resolves to an
+    unrelated third party — so there is no first-party host to run contract discovery against.
+  evidence:
+  - url: https://equityzen.com/company/aboutmovie
+    status: 200
+  - url: https://aboutmovie.com/
+    status: 200
+  - url: https://aboutmovie.com/openapi.json
+    status: 200
+  - url: https://aboutmovie.com/.well-known/agent-card.json
+    status: 200
+  - url: https://aboutmovie.org/openapi.json
+    status: 200
+  - url: https://aboutmovie.net/
+    status: 403
+  - url: https://api.github.com/orgs/aboutmovie
+    status: 404
+  checked: '2026-09-06'
+x-enrichment:
+  date: '2026-09-06'
+  status: minimal
+  artifacts_added: 0
+  pass: local-v3
